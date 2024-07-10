@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background: #000;
+        }
+        #nameInput {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        #startButton, #restartButton {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #scoreboard {
+            margin: 20px auto;
+            text-align: center;
+            font-family: Courier, monospace;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="nameInput" maxlength="5" placeholder="Enter your name">
+    <button id="startButton">Start Game</button>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="scoreboard"></div>
+    <script src="game.js"></script>
+</body>
+</html>
